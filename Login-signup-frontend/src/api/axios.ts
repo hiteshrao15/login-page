@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://login-page-mieq.vercel.app/',
+  baseURL: 'https://login-page-backend-black.vercel.app/pages',
   headers: {
     'Content-Type': 'application/json',
   },
