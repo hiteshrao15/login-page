@@ -16,6 +16,10 @@ app.get("/",(req,res)=>{
 })
 app.use('/pages',routes)
 
-app.listen(8888,()=>{
-    console.log("Server is running fine at 8888")
-})
+const PORT = process.env.PORT || 8888;
+
+app.listen(PORT, () => {
+    console.log(`Server running on ${PORT}`);
+});
+
+module.exports = app;
